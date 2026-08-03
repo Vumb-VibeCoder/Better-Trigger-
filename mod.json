@@ -1,0 +1,44 @@
+{
+	"geode": "5.8.2",
+	"version": "0.1.0",
+	"gd": {
+		"win": "*",
+		"mac": "*",
+		"android": "*",
+		"ios": "*"
+	},
+	"id": "sailamcuasep.trigger_assistant",
+	"name": "Trigger Assistant",
+	"developers": ["YourName"],
+	"description": "Rule-based trigger knowledge base + editor UI: auto group allocation, object tagging, and formula-driven trigger generation (3D flip, parallax, etc). Includes an optional \"Ask AI\" feature (Gemini) for trigger explanations - requires a user-supplied API key in Settings.",
+	"links": {
+		"source": "https://github.com/sailamcuasep/trigger-assistant"
+	},
+	"dependencies": {},
+	"resources": {
+		"sprites": []
+	},
+	"settings": {
+		"meta-section": {
+			"type": "title",
+			"name": "Trigger Assistant"
+		},
+		"show-warnings": {
+			"type": "bool",
+			"name": "Show Combination Warnings",
+			"description": "Show a notification when selected triggers violate a known combination rule (mismatched duration/easing, etc).",
+			"default": true
+		},
+		"ai-section": {
+			"type": "title",
+			"name": "Ask AI (Gemini)"
+		},
+		"gemini-api-key": {
+			"type": "string",
+			"name": "Gemini API Key",
+			"description": "API key tu Google AI Studio (aistudio.google.com/apikey), dung cho nut \"Ask AI\" trong Trigger Explainer.",
+			"default": "",
+			"filter": "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.-_"
+		}
+	}
+}
